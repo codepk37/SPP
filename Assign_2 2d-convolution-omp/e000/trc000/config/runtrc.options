@@ -1,0 +1,16 @@
+-r
+/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/trc000
+--return-app-exitcode
+--cs-mode=count-loops,count-flops,stl-profiling,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int,
+--cs-file=/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/callstacks.def
+--jit-profiling
+--enable-cache-simulation
+--cache-config=4:48k:12w/1280k:20w/1:8192k:8w
+--cachesim-sampling-factor=10
+--target-gpu=0:0:2.0
+--gpu-kernel-of-interest=*
+--app-working-dir=/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/.
+--
+./runner_script.sh

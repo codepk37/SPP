@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2024/04/11 16:42:22</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000/mp000.advixe</arg>
+</msg>
+<msg id="4" tool="tc">
+  <type>START</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:22 2024</timestamp>
+</msg>
+<msg id="5" tool="tc">
+  <type>EXEC_OF_INTEREST</type>
+  <arg>/usr/bin/bash</arg>
+  <arg>59431</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:22 2024</timestamp>
+</msg>
+<msg id="6" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/bin/bash</arg>
+  <arg>0x639b75fa9000</arg>
+  <arg>0x639b761095b7</arg>
+  <arg>1</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:22 2024</timestamp>
+</msg>
+<msg id="7" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x7865633fb000</arg>
+  <arg>0x7865634362d7</arg>
+  <arg>2</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:22 2024</timestamp>
+</msg>
+<msg id="8" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffca39f9000</arg>
+  <arg>0x7ffca39fa0aa</arg>
+  <arg>3</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:22 2024</timestamp>
+</msg>
+<msg id="9" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libtinfo.so.6</arg>
+  <arg>0x78654dbc0000</arg>
+  <arg>0x78654dbf191f</arg>
+  <arg>4</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:23 2024</timestamp>
+</msg>
+<msg id="10" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <arg>0x78654d800000</arg>
+  <arg>0x78654da28e4f</arg>
+  <arg>5</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:12:23 2024</timestamp>
+</msg>
+<msg id="11" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/usr/bin/bash</arg>
+  <arg>1</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="12" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>2</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="13" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>3</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="14" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libtinfo.so.6</arg>
+  <arg>4</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="15" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <arg>5</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="16" tool="tc">
+  <type>PROCESS_TERMINATE</type>
+  <arg>/usr/bin/bash</arg>
+  <arg>59431</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="17" tool="tc">
+  <type>NO_ANNOTATIONS</type>
+  <severity>WARNING</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="18" tool="tc">
+  <type>ANALYSIS_COMPLETE</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="19" tool="tc">
+  <type>STOP</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Apr 11 09:13:24 2024</timestamp>
+</msg>
+<msg id="20" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="21" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000/mp000.advixe</arg>
+</msg>
+<msg id="22" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="23" tool="runtool">
+  <type>log-end</type>
+  <arg>2024/04/11 16:43:28</arg>
+</msg>
+
+</log>
+

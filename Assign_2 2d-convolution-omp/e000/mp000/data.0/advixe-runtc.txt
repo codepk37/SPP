@@ -1,0 +1,21 @@
+
+=== Start: [2024/04/11 16:42:22] === 
+Analysis started...
+Result file: /home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000/mp000.advixe 
+Found target process /usr/bin/bash (PID = 59431). Analysis started... 
+Loaded module: /usr/bin/bash. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: [vdso]. 
+Loaded module: /lib/x86_64-linux-gnu/libtinfo.so.6. 
+Loaded module: /lib/x86_64-linux-gnu/libc.so.6. 
+Unloaded module: /usr/bin/bash. 
+Unloaded module: /lib64/ld-linux-x86-64.so.2. 
+Unloaded module: [vdso]. 
+Unloaded module: /lib/x86_64-linux-gnu/libtinfo.so.6. 
+Unloaded module: /lib/x86_64-linux-gnu/libc.so.6. 
+Process /usr/bin/bash (PID = 59431) has terminated. 
+Warning: No SITE annotations were encountered, so no stride/alignment data can be reported. 
+Application exit code: 0 
+Result file: /home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000/mp000.advixe 
+Analysis completed
+=== End: [2024/04/11 16:43:28] === 

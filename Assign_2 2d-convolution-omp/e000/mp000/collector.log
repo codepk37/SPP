@@ -1,0 +1,9 @@
+Analysis started...
+Collection has been started.
+Result file: /home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000/mp000.advixe 
+Found target process /usr/bin/bash (PID = 59431). Analysis started... 
+Loaded module: /usr/bin/bash. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: [vdso]. 
+Loaded module: /lib/x86_64-linux-gnu/libtinfo.so.6. 
+Loaded module: /lib/x86_64-linux-gnu/libc.so.6. 

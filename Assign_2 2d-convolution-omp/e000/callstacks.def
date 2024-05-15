@@ -1,0 +1,227 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	    208560	    0	      0	                                  _start	/usr/bin/bash	208560	38	0	3	0	0	0	0	0	0	0	0
+         2	        -1	    208560	    0	      0	                                  _start	/usr/bin/bash	208560	38	0	3	0	0	0	0	0	0	0	0
+         3	        -1	     14080	    0	      0	                             func@0x2bc0	/usr/bin/mkdir	11200	2884	0	4	0	0	0	0	0	0	0	0
+         4	        -1	    916832	    0	      0	                            func@0xdfd52	/usr/bin/cmake	916818	18	0	47	0	0	0	0	0	0	0	0
+         5	        -1	     49536	    0	      0	                                  _start	/usr/bin/make	49536	38	0	2	0	0	0	0	0	0	0	0
+         6	        -1	     15552	    0	      0	                                  _start	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	15552	38	0	6	0	0	0	0	0	0	0	0
+         7	        -1	     15588	    0	      0	                                  _start	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	15552	38	0	6	0	0	0	0	0	0	0	0
+         8	       169	    171583	    1	      1	[Loop at line 379 in __libc_start_main_impl]	/lib/x86_64-linux-gnu/libc.so.6	171555,171688	129,65	0	42	0	0	0	0	0	0	0	0
+         9	         8	    171407	    0	      1	                  __libc_start_call_main	/lib/x86_64-linux-gnu/libc.so.6	171280	172	0	44	0	0	0	0	0	0	0	0
+        10	         9	     12453	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        11	        10	   1767994	    0	      1	            __memset_evex_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1767872	329	0	45	0	0	0	0	0	0	0	0
+        12	         9	     13020	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        13	       110	     25563	    1	      0	  [Loop at line 75 in solution::compute]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	25109,25912,26180,26216,26440,26496,26552,26608,26729	776,115,29,196,50,50,49,109,42	11090,26412	13	0	0	0	0	0	0	0	0
+        14	        13	     84496	    0	      1	                           GOMP_parallel	/lib/x86_64-linux-gnu/libgomp.so.1	84432	143	0	1	0	0	0	0	0	0	0	0
+        15	       174	    123487	    1	      1	          [Loop@0x1e180 in func@0x1de54]	/lib/x86_64-linux-gnu/libgomp.so.1	123264,124624,124656,125464,125632,126326	400,30,73,48,80,76	0	8	0	0	0	0	0	0	0	0
+        16	        13	     84501	    0	      1	                           GOMP_parallel	/lib/x86_64-linux-gnu/libgomp.so.1	84432	143	0	1	0	0	0	0	0	0	0	0
+        17	       113	     21085	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        18	       113	     20981	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        19	       113	     21004	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        20	       113	     20998	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        21	       113	     20976	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        22	        13	    127580	    0	      1	                            func@0x1f230	/lib/x86_64-linux-gnu/libgomp.so.1	127536	420	0	27	0	0	0	0	0	0	0	0
+        23	       177	    133050	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        24	       110	     25792	    1	      0	  [Loop at line 75 in solution::compute]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	25109,25912,26180,26216,26440,26496,26552,26608,26729	776,115,29,196,50,50,49,109,42	11090,26412	13	0	0	0	0	0	0	0	0
+        25	        24	     84496	    0	      1	                           GOMP_parallel	/lib/x86_64-linux-gnu/libgomp.so.1	84432	143	0	1	0	0	0	0	0	0	0	0
+        26	        25	    124758	    0	      1	                            func@0x1de54	/lib/x86_64-linux-gnu/libgomp.so.1	122452	5084	0	10	0	0	0	0	0	0	0	0
+        27	       180	    132610	    1	      1	          [Loop@0x20600 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132608	17	0	31	0	0	0	0	0	0	0	0
+        28	        24	     84501	    0	      1	                           GOMP_parallel	/lib/x86_64-linux-gnu/libgomp.so.1	84432	143	0	1	0	0	0	0	0	0	0	0
+        29	        28	     20217	    0	      0	             solution::compute._omp_fn.1	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	19728	854	0	19	0	0	0	0	0	0	0	0
+        30	       182	    133183	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+        31	       187	     97120	    1	      1	          [Loop@0x17ae1 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96993,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	165,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	34	0	0	0	0	0	0	0	0
+        32	       121	     22207	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        33	       121	     22187	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        34	       121	     22171	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        35	       121	     22053	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        36	       120	     21972	    1	      0	[Loop at line 158 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21888,22312	406,243	22294	22	0	0	0	0	0	0	0	0
+        37	       189	    133059	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        38	       189	    133050	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        39	        24	    127580	    0	      1	                            func@0x1f230	/lib/x86_64-linux-gnu/libgomp.so.1	127536	420	0	27	0	0	0	0	0	0	0	0
+        40	       193	    133050	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        41	       110	     25803	    1	      0	  [Loop at line 75 in solution::compute]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	25109,25912,26180,26216,26440,26496,26552,26608,26729	776,115,29,196,50,50,49,109,42	11090,26412	13	0	0	0	0	0	0	0	0
+        42	        41	   1174139	    0	      1	                                __munmap	/lib/x86_64-linux-gnu/libc.so.6	1174128	37	0	46	0	0	0	0	0	0	0	0
+        43	       128	     13246	    1	      0	                   [Loop@0x33b0 in main]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	13232	50	14705,13282	23	0	0	0	0	0	0	0	0
+        44	       128	     13239	    1	      0	                   [Loop@0x33b0 in main]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	13232	50	14705,13282	23	0	0	0	0	0	0	0	0
+        45	       128	     13252	    1	      0	                   [Loop@0x33b0 in main]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	13232	50	14705,13282	23	0	0	0	0	0	0	0	0
+        46	       128	     13232	    1	      0	                   [Loop@0x33b0 in main]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	13232	50	14705,13282	23	0	0	0	0	0	0	0	0
+        47	         9	     13380	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        48	        47	   1174139	    0	      1	                                __munmap	/lib/x86_64-linux-gnu/libc.so.6	1174128	37	0	46	0	0	0	0	0	0	0	0
+        49	         9	     13395	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        50	        49	   1174139	    0	      1	                                __munmap	/lib/x86_64-linux-gnu/libc.so.6	1174128	37	0	46	0	0	0	0	0	0	0	0
+        51	         9	     13439	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        52	        51	   1563818	    0	      1	                 std::filesystem::remove	/lib/x86_64-linux-gnu/libstdc++.so.6	1563760	100	0	5	0	0	0	0	0	0	0	0
+        53	        52	   1563652	    0	      1	                 std::filesystem::remove	/lib/x86_64-linux-gnu/libstdc++.so.6	1563632	124	0	12	0	0	0	0	0	0	0	0
+        54	        53	    401004	    0	      1	                             __GI_remove	/lib/x86_64-linux-gnu/libc.so.6	400992	55	0	48	0	0	0	0	0	0	0	0
+        55	        54	   1138859	    0	      1	                                  unlink	/lib/x86_64-linux-gnu/libc.so.6	1138848	37	0	49	0	0	0	0	0	0	0	0
+        56	         9	     13589	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+        57	        56	    677017	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	676832	257	0	50	0	0	0	0	0	0	0	0
+        58	        57	   1174139	    0	      1	                                __munmap	/lib/x86_64-linux-gnu/libc.so.6	1174128	37	0	46	0	0	0	0	0	0	0	0
+        59	        -1	    121536	    0	      1	                            func@0x1da44	/lib/x86_64-linux-gnu/libgomp.so.1	121412	128	0	39	0	0	0	0	0	0	0	0
+        60	        -1	   1206351	    0	      1	                                __clone3	/lib/x86_64-linux-gnu/libc.so.6	1206304	75	0	51	0	0	0	0	0	0	0	0
+        61	       171	    608962	    1	      1	      [Loop at line 358 in start_thread]	/lib/x86_64-linux-gnu/libc.so.6	608335,608872,608933,609203	495,48,255,104	0	52	0	0	0	0	0	0	0	0
+        62	        61	   3713604	    0	      1	       tpss_thread_start_routine_wrapper	/opt/intel/oneapi/advisor/2024.1/lib64/libtpsstool.so	3712672	1788	0	15	0	0	0	0	0	0	0	0
+        63	       195	    121881	    1	      1	          [Loop@0x1dbe0 in func@0x1dac4]	/lib/x86_64-linux-gnu/libgomp.so.1	121824	74	0	40	0	0	0	0	0	0	0	0
+        64	       198	    133050	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        65	       195	    121831	    1	      1	          [Loop@0x1dbe0 in func@0x1dac4]	/lib/x86_64-linux-gnu/libgomp.so.1	121824	74	0	40	0	0	0	0	0	0	0	0
+        66	       202	    132610	    1	      1	          [Loop@0x20600 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132608	17	0	31	0	0	0	0	0	0	0	0
+        67	       195	    121869	    1	      1	          [Loop@0x1dbe0 in func@0x1dac4]	/lib/x86_64-linux-gnu/libgomp.so.1	121824	74	0	40	0	0	0	0	0	0	0	0
+        68	        67	     20217	    0	      0	             solution::compute._omp_fn.1	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	19728	854	0	19	0	0	0	0	0	0	0	0
+        69	       205	    133183	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+        70	       210	     97120	    1	      1	          [Loop@0x17ae1 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96993,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	165,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	34	0	0	0	0	0	0	0	0
+        71	       134	     22187	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        72	       134	     22207	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        73	       134	     22197	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        74	       212	    133050	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        75	       198	    133048	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        76	       139	     23367	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+        77	       139	     23347	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+        78	       133	     21972	    1	      0	[Loop at line 158 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21888,22312	406,243	22294	22	0	0	0	0	0	0	0	0
+        79	       134	     22181	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        80	       134	     22161	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        81	       146	     21085	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        82	       146	     21040	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        83	       146	     21094	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        84	       146	     21004	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+        85	       134	     22171	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        86	       202	    132614	    1	      1	          [Loop@0x20600 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132608	17	0	31	0	0	0	0	0	0	0	0
+        87	       134	     22125	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        88	       134	     22146	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        89	       134	     22214	    1	      0	[Loop at line 169 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22016,22312	232,243	22248	20	0	0	0	0	0	0	0	0
+        90	       139	     23331	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+        91	       139	     23374	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+        92	       212	    133054	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        93	       198	    133062	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        94	       202	    132621	    1	      1	          [Loop@0x20600 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132608	17	0	31	0	0	0	0	0	0	0	0
+        95	       198	    133054	    1	      1	          [Loop@0x207b8 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133048	18	0	28	0	0	0	0	0	0	0	0
+        96	        68	    133332	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+        97	       223	     97120	    1	      1	          [Loop@0x17ae1 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96993,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	165,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	34	0	0	0	0	0	0	0	0
+        98	       158	     23347	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+        99	       158	     23367	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+       100	       146	     20976	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+       101	       146	     21067	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+       102	       146	     20998	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+       103	       146	     21031	    1	      0	[Loop at line 108 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20976	133	21109	16	0	0	0	0	0	0	0	0
+       104	       139	     23184	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+       105	       139	     23341	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+       106	       139	     23241	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+       107	       139	     23314	    1	      0	[Loop at line 246 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23184,23520	231,276	23415	24	0	0	0	0	0	0	0	0
+       108	        -1	     20208	    0	      0	                             func@0x4ae0	/usr/bin/dash	19168	1088	0	7	0	0	0	0	0	0	0	0
+       109	        -1	     20208	    0	      0	                             func@0x4ae0	/usr/bin/dash	19168	1088	0	7	0	0	0	0	0	0	0	0
+       110	        12	     25109	    0	      0	                       solution::compute	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	24656	2225	0	14	0	0	0	0	0	0	0	0
+       111	        12	     25563	    0	      0	                       solution::compute	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	24656	2225	0	14	0	0	0	0	0	0	0	0
+       112	        16	     20704	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       113	       112	     20976	    1	      0	[Loop at line 106 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20704,21312,21688	558,370,15	21262	18	0	0	0	0	0	0	0	0
+       114	        16	     21085	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       115	        16	     20981	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       116	        16	     21004	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       117	        16	     20998	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       118	        16	     20976	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       119	        12	     25792	    0	      0	                       solution::compute	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	24656	2225	0	14	0	0	0	0	0	0	0	0
+       120	        31	     21888	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       121	       120	     22016	    1	      0	[Loop at line 158 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21888,22312	406,243	22294	22	0	0	0	0	0	0	0	0
+       122	        31	     22207	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       123	        31	     22187	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       124	        31	     22171	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       125	        31	     22053	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       126	        31	     21972	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       127	        12	     25803	    0	      0	                       solution::compute	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	24656	2225	0	14	0	0	0	0	0	0	0	0
+       128	         9	     13232	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+       129	         9	     13246	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+       130	         9	     13239	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+       131	         9	     13252	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+       132	         9	     13232	    0	      0	                                    main	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	11312	4131	0	9	0	0	0	0	0	0	0	0
+       133	        70	     21888	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       134	       133	     22016	    1	      0	[Loop at line 158 in solution::compute._omp_fn.2]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21888,22312	406,243	22294	22	0	0	0	0	0	0	0	0
+       135	        70	     22187	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       136	        70	     22207	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       137	        70	     22197	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       138	        70	     23032	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       139	       138	     23184	    1	      0	[Loop at line 245 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23032,23520	447,1126	23479	26	0	0	0	0	0	0	0	0
+       140	        70	     23367	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       141	        70	     23347	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       142	        70	     21972	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       143	        70	     22181	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       144	        70	     22161	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       145	        67	     20704	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       146	       145	     20976	    1	      0	[Loop at line 106 in solution::compute._omp_fn.0]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20704,21312,21688	558,370,15	21262	18	0	0	0	0	0	0	0	0
+       147	        67	     21085	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       148	        67	     21040	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       149	        67	     21094	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       150	        67	     21004	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       151	        70	     22171	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       152	        70	     22125	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       153	        70	     22146	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       154	        70	     22214	    0	      0	             solution::compute._omp_fn.2	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	21712	843	0	21	0	0	0	0	0	0	0	0
+       155	        70	     23331	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       156	        70	     23374	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       157	        97	     23032	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       158	       157	     23184	    1	      0	[Loop at line 245 in solution::compute._omp_fn.3]	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	23032,23520	447,1126	23479	26	0	0	0	0	0	0	0	0
+       159	        97	     23347	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       160	        97	     23367	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       161	        67	     20976	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       162	        67	     21067	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       163	        67	     20998	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       164	        67	     21031	    0	      0	             solution::compute._omp_fn.0	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	20592	1116	0	17	0	0	0	0	0	0	0	0
+       165	        70	     23184	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       166	        70	     23341	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       167	        70	     23241	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       168	        70	     23314	    0	      0	             solution::compute._omp_fn.3	/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/build/bin/tester	22560	2091	0	25	0	0	0	0	0	0	0	0
+       169	         7	    171555	    0	      1	                  __libc_start_main_impl	/lib/x86_64-linux-gnu/libc.so.6	171456	328	0	43	0	0	0	0	0	0	0	0
+       170	         7	    171583	    0	      1	                  __libc_start_main_impl	/lib/x86_64-linux-gnu/libc.so.6	171456	328	0	43	0	0	0	0	0	0	0	0
+       171	        60	    608335	    0	      1	                            start_thread	/lib/x86_64-linux-gnu/libc.so.6	608208	1130	0	53	0	0	0	0	0	0	0	0
+       172	        60	    608962	    0	      1	                            start_thread	/lib/x86_64-linux-gnu/libc.so.6	608208	1130	0	53	0	0	0	0	0	0	0	0
+       173	        14	    123070	    0	      1	                            func@0x1de54	/lib/x86_64-linux-gnu/libgomp.so.1	122452	5084	0	10	0	0	0	0	0	0	0	0
+       174	       173	    123264	    1	      1	          [Loop@0x1e0be in func@0x1de54]	/lib/x86_64-linux-gnu/libgomp.so.1	123070,123264,124573,124624,124656,124818,125464,125632,126222,126576,127156,127455	187,400,46,30,73,46,48,80,180,75,11,63	0	11	0	0	0	0	0	0	0	0
+       175	        14	    123487	    0	      1	                            func@0x1de54	/lib/x86_64-linux-gnu/libgomp.so.1	122452	5084	0	10	0	0	0	0	0	0	0	0
+       176	        22	    133008	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       177	       176	    133048	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+       178	        22	    133050	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       179	        26	    132576	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       180	       179	    132608	    1	      1	          [Loop@0x205e0 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132576,132640,132704	55,60,9	0	33	0	0	0	0	0	0	0	0
+       181	        26	    132610	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       182	        29	    133008	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       183	        29	    133183	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       184	        30	     96774	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       185	       184	     96808	    1	      1	          [Loop@0x17a06 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96774,96984,97248,97272,97360,97712,97824,97864,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536	184,254,19,82,345,107,20,49,48,13,19,13,89,18,10,46,13,26,90,146,354	0	38	0	0	0	0	0	0	0	0
+       186	       185	     96827	    1	      1	          [Loop@0x17a28 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96808,96984,97248,97272,97360,97712,97824,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536,98789,98870	150,254,19,82,345,107,20,48,13,19,13,89,18,10,46,13,26,90,146,240,35,20	0	37	0	0	0	0	0	0	0	0
+       187	       186	     96993	    1	      1	          [Loop@0x17a3b in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96827,96984,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	45,174,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	36	0	0	0	0	0	0	0	0
+       188	        30	     97120	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       189	       182	    133048	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+       190	        29	    133059	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       191	        29	    133050	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       192	        39	    133008	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       193	       192	    133048	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+       194	        39	    133050	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       195	        62	    121824	    0	      1	                            func@0x1dac4	/lib/x86_64-linux-gnu/libgomp.so.1	121540	380	0	41	0	0	0	0	0	0	0	0
+       196	        62	    121881	    0	      1	                            func@0x1dac4	/lib/x86_64-linux-gnu/libgomp.so.1	121540	380	0	41	0	0	0	0	0	0	0	0
+       197	        63	    133008	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       198	       197	    133048	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+       199	        63	    133050	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       200	        62	    121831	    0	      1	                            func@0x1dac4	/lib/x86_64-linux-gnu/libgomp.so.1	121540	380	0	41	0	0	0	0	0	0	0	0
+       201	        65	    132576	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       202	       201	    132608	    1	      1	          [Loop@0x205e0 in func@0x205c4]	/lib/x86_64-linux-gnu/libgomp.so.1	132576,132640,132704	55,60,9	0	33	0	0	0	0	0	0	0	0
+       203	        65	    132610	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       204	        62	    121869	    0	      1	                            func@0x1dac4	/lib/x86_64-linux-gnu/libgomp.so.1	121540	380	0	41	0	0	0	0	0	0	0	0
+       205	        68	    133008	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       206	        68	    133183	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       207	        69	     96774	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       208	       207	     96808	    1	      1	          [Loop@0x17a06 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96774,96984,97248,97272,97360,97712,97824,97864,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536	184,254,19,82,345,107,20,49,48,13,19,13,89,18,10,46,13,26,90,146,354	0	38	0	0	0	0	0	0	0	0
+       209	       208	     96827	    1	      1	          [Loop@0x17a28 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96808,96984,97248,97272,97360,97712,97824,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536,98789,98870	150,254,19,82,345,107,20,48,13,19,13,89,18,10,46,13,26,90,146,240,35,20	0	37	0	0	0	0	0	0	0	0
+       210	       209	     96993	    1	      1	          [Loop@0x17a3b in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96827,96984,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	45,174,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	36	0	0	0	0	0	0	0	0
+       211	        69	     97120	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       212	       205	    133048	    1	      1	          [Loop@0x20790 in func@0x20764]	/lib/x86_64-linux-gnu/libgomp.so.1	133008,133048,133104,133192	36,37,85,12	0	30	0	0	0	0	0	0	0	0
+       213	        68	    133050	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       214	        63	    133048	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       215	        65	    132614	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       216	        68	    133054	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       217	        63	    133062	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       218	        65	    132621	    0	      1	                            func@0x205c4	/lib/x86_64-linux-gnu/libgomp.so.1	132548	236	0	32	0	0	0	0	0	0	0	0
+       219	        63	    133054	    0	      1	                            func@0x20764	/lib/x86_64-linux-gnu/libgomp.so.1	132964	384	0	29	0	0	0	0	0	0	0	0
+       220	        96	     96774	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       221	       220	     96808	    1	      1	          [Loop@0x17a06 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96774,96984,97248,97272,97360,97712,97824,97864,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536	184,254,19,82,345,107,20,49,48,13,19,13,89,18,10,46,13,26,90,146,354	0	38	0	0	0	0	0	0	0	0
+       222	       221	     96827	    1	      1	          [Loop@0x17a28 in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96808,96984,97248,97272,97360,97712,97824,97944,98000,98016,98040,98056,98152,98176,98192,98240,98256,98288,98384,98536,98789,98870	150,254,19,82,345,107,20,48,13,19,13,89,18,10,46,13,26,90,146,240,35,20	0	37	0	0	0	0	0	0	0	0
+       223	       222	     96993	    1	      1	          [Loop@0x17a3b in func@0x179b4]	/lib/x86_64-linux-gnu/libgomp.so.1	96827,96984,97248,97272,97360,97712,97944,98000,98016,98040,98056,98152,98176,98192,98288,98384,98536,98789	45,174,19,82,345,107,48,13,19,13,13,18,10,46,90,146,240,35	0	36	0	0	0	0	0	0	0	0
+       224	        96	     97120	    0	      1	                            func@0x179b4	/lib/x86_64-linux-gnu/libgomp.so.1	96692	2208	0	35	0	0	0	0	0	0	0	0
+       225	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	55	0	0	0	0	0	0	0	0

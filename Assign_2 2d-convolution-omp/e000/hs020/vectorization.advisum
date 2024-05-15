@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/src/main.cpp"
+           line_no="246"
+           routine="solution::compute._omp_fn.3"
+           is_vectorized="1"
+           self_time="7.200265E-01"
+           total_time="7.200265E-01"
+           trip_counts="511"
+           func_instance="24"
+           priority="0"/>
+  <hotspot filename="/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/src/main.cpp"
+           line_no="169"
+           routine="solution::compute._omp_fn.2"
+           is_vectorized="1"
+           self_time="6.040603E-01"
+           total_time="6.040603E-01"
+           trip_counts="512"
+           func_instance="20"
+           priority="0"/>
+  <hotspot filename="/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/src/main.cpp"
+           line_no="108"
+           routine="solution::compute._omp_fn.0"
+           is_vectorized="1"
+           self_time="4.620618E-01"
+           total_time="4.620618E-01"
+           trip_counts="1398101"
+           func_instance="16"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="main"
+           is_vectorized="1"
+           self_time="1.800000E-01"
+           total_time="1.800000E-01"
+           trip_counts="16777216"
+           func_instance="23"
+           priority="0"/>
+  <hotspot filename="/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/src/main.cpp"
+           line_no="158"
+           routine="solution::compute._omp_fn.2"
+           is_vectorized="0"
+           self_time="1.220129E-01"
+           total_time="7.260731E-01"
+           trip_counts="2730"
+           func_instance="22"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

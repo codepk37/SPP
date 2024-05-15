@@ -1,0 +1,9 @@
+-r
+/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/e000/mp000
+--tool=map
+--record-stack-frame
+--sample-size=300000
+--record-mem-allocations
+--app-working-dir=/home/popos/Desktop/SPP_2D_convolution/big-board-2d-convolution-codepk37/.
+--
+./runner_script.sh

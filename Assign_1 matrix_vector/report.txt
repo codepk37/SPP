@@ -1,0 +1,96 @@
+1)-O0 :gcc -O0 mat-vec.c -o matp_0
+Time taken: 0.002450 seconds
+GFLOPS: 0.816327
+
+2)
+-O1 :gcc -O1 mat-vec.c -o matp_1 
+Time taken: 0.001040 seconds
+GFLOPS: 1.923077
+
+Speedup=2.3557
+
+-O2 :gcc -O2 mat-vec.c -o matp_2
+Time taken: 0.000957 seconds
+GFLOPS: 2.089864
+
+Speedup=2.56
+
+-O3 :gcc -O3 mat-vec.c -o matp_3 
+Time taken: 0.000981 seconds
+GFLOPS: 2.038736
+
+Speedup=2.4974
+
+Performance with flag: O3 ~ O2 > O1 >> O0
+
+
+3) 
+gcc -march=native -O2  mat-vec.c
+Time taken: 0.001082 seconds
+GFLOPS: 1.848429
+Speedup:2.2643
+
+gcc -march=native -O3  mat-vec.c
+Time taken: 0.000996 seconds
+GFLOPS: 2.008032
+Speedup:2.4597
+
+gcc -O3  -ftree-vectorize  mat-vec.c
+Time taken: 0.000944 seconds
+GFLOPS: 2.118644
+Speedup:2.5952
+
+
+gcc -funroll-loops -O3  mat-vec.c
+Time taken: 0.000935 seconds
+GFLOPS: 2.139037
+Speedup:
+
+
+(Using all optimization flags at once may not always provide the best results)
+gcc -march=native -O3 -funroll-loops mat-vec.c 
+Time taken: 0.001095 seconds
+GFLOPS: 1.826484
+Speedup:2.2374
+
+gcc -O3 -march=native -flto -ftree-vectorize -funroll-loops -fprofile-generate -o matrix_vector_multiply_optimized mat-vec.c
+Time taken: 0.000936 seconds
+GFLOPS: 2.136752
+Speedup:2.6174
+
+
+4)
+gcc -mavx512f  -o matrix_vector_multiply_avx512 vectorized_intrinsic_mat_vec.c 
+Time taken: 0.000737 seconds
+GFLOPS: 2.713704
+Speedup:3.3242
+
+gcc -mavx512f -O3  -o matrix_vector_multiply_avx512 vectorized_intrinsic_mat_vec.c 
+Time taken: 0.000728 seconds
+GFLOPS: 2.747253
+Speedup:3.3653
+
+
+5)Performance with only parallelization using OpenMP
+gcc -fopenmp -o matrix_vector_multiply_omp        ma_vec_omp.c 
+Time taken: 0.000744 seconds
+GFLOPS: 2.688172
+Speedup:3.293
+
+gcc -fopenmp -O3  -o matrix_vector_multiply_omp    ma_vec_omp.c 
+Time taken: 0.000889 seconds
+GFLOPS: 2.249719
+Speedup:2.7559
+
+
+6)Performance with vectorization and OpenMP
+
+gcc -mavx512f  -o matrix_vector_multiply_avx512 -fopenmp vectorization_intrinsic_OMP.c 
+Time taken: 0.000696 seconds
+GFLOPS: 2.873563
+Speedup:3.5201
+
+gcc -mavx512f -O3 -o matrix_vector_multiply_avx512 -fopenmp vectorization_intrinsic_OMP.c 
+Time taken: 0.000693 seconds
+GFLOPS: 2.886003
+Speedup:3.5354

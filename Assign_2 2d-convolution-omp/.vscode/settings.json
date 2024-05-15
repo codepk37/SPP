@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "valarray": "cpp",
+        "ranges": "cpp",
+        "random": "cpp",
+        "chrono": "cpp"
+    }
+}

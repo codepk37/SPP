@@ -1,0 +1,86 @@
+Collection status has changed. 1
+Collection has been started.
+Collection has stopped. Application exit code:  0
+Finalizing results
+Finalizing the result
+Clearing the database
+The database has been cleared, elapsed time is 0.244 seconds.
+Loading raw data to the database
+Loading 'systemcollector-89693-pop-os-pk.sc' file
+Loading '89693-89706.0.trace' file
+Loading '89706-89719.0.trace' file
+Loading '89706-89719.1.trace' file
+Loading '89706-89731.0.trace' file
+Loading '89706-89731.1.trace' file
+Loading '89706-89743.0.trace' file
+Loading '89706-89743.1.trace' file
+Loading '89706-89965.0.trace' file
+Loading '89706-89965.1.trace' file
+Loading '89743-89754.0.trace' file
+Loading '89743-89761.0.trace' file
+Loading '89743-89768.0.trace' file
+Loading '89743-89940.0.trace' file
+Loading '89768-89799.0.trace' file
+Loading '89768-89825.0.trace' file
+Loading '89768-89832.0.trace' file
+Loading '89768-89851.0.trace' file
+Loading '89768-89913.0.trace' file
+Loading '89768-89920.0.trace' file
+Loading '89799-89805.0.trace' file
+Loading '89805-89811.0.trace' file
+Loading '89805-89811.1.trace' file
+Loading '89832-89838.0.trace' file
+Loading '89832-89838.1.trace' file
+Loading '89851-89893.0.trace' file
+Loading '89893-89899.0.trace' file
+Loading '89893-89899.1.trace' file
+Loading '89920-89926.0.trace' file
+Loading '89920-89926.1.trace' file
+Updating precomputed scalar metrics
+Raw data has been loaded to the database, elapsed time is 0.299 seconds.
+Processing profile metrics and debug information
+Data transformations have been finished, elapsed time is 0.002 seconds.
+Setting data model parameters
+Resolving module symbols
+Resolving information for `mkdir'
+Resolving information for `libgomp.so.1'
+Resolving information for `make'
+Warning: Cannot locate debugging information for file `/usr/bin/mkdir'.
+Resolving information for `tester'
+Resolving information for `bash'
+Resolving information for `dash'
+Warning: Cannot locate debugging information for file `/lib/x86_64-linux-gnu/libgomp.so.1'.
+Resolving information for `libstdc++.so.6'
+Warning: Cannot locate debugging information for file `/usr/bin/make'.
+Warning: Cannot locate debugging information for file `/usr/bin/dash'.
+Warning: Cannot locate debugging information for file `/usr/bin/bash'.
+Warning: Cannot locate debugging information for file `/lib/x86_64-linux-gnu/libstdc++.so.6'.
+Resolving information for `cmake'
+Resolving information for `libc.so.6'
+Warning: Cannot locate debugging information for file `/usr/bin/cmake'.
+Resolving information for `libtpsstool.so'
+Warning: Cannot locate debugging information for file `/opt/intel/oneapi/advisor/2024.1/lib64/libtpsstool.so'.
+Resolving bottom user stack information
+Resolving thread name information
+Resolving call target names for dynamic code
+Symbol resolution has been finished, elapsed time is 0.591 seconds.
+Processing profile metrics and debug information
+Deferred data transformations have been finished, elapsed time is 0.005 seconds.
+Setting data model parameters
+Data model parameters have been set, elapsed time is 0.008 seconds.
+Precomputing frequently used data
+Precomputing frequently used data
+Updating precomputed scalar metrics
+Precomputing frequently used data has been finished, elapsed time is 0.017 seconds.
+Discarding redundant overtime data
+Saving the result
+Redundant overtime data has been discarded, elapsed time is 0.001 seconds.
+Raw collector data has been discarded, elapsed time is 0.000 seconds.
+Finalizing the result took 1.201 seconds.
+Preparing data for display of survey call tree
+Resolving module symbols
+Resolving information for dangling locations
+Resolving bottom user stack information
+Resolving thread name information
+Resolving call target names for dynamic code
+Precomputing frequently used data

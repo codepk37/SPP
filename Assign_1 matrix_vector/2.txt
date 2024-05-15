@@ -1,0 +1,2 @@
+Time taken: 0.001055 seconds
+GFLOPS: 1.895735
