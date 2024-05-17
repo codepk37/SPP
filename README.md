@@ -1,5 +1,6 @@
 Used SIMD AVX512 instruction set for vectorizing code, openmp for using multiple threads, prefetching ,locality of reference ,thread pinning, loop unrolling , fused multiply-add , blocking , mmap in first 3 assignments.<br />
 Last assignment was done using cuda <br /><br />
+Run : ./runner_script.sh
 <br />
 Matrix vector : Optimizations in report <br /><br />
 2D image convolution: Optimized till 1.7 sec. Roofline analysis(Intel advisor) gave 1.5 sec <br /><br />
