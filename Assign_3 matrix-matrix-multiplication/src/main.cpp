@@ -222,7 +222,7 @@ namespace solution
     }
 };
 
-// 2nd Code : 54 milli sec
+// 2nd Code : 52 milli sec
 
 // REPORT:
 // more optimized :since once submatrix(working set) fits in cache ,iterating columnwise wont make difference
